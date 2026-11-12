@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira de Profissões | Nutrição</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte Google Fonts para um visual moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">🥗 Feira de Profissões</div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Apresentação</a></li>
+                    <li><a href="#historia">Fatos Históricos</a></li>
+                    <li><a href="#mercado">Panorama e Mercado</a></li>
+                </ul>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção 1: Apresentação da Profissão (Home) -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span class="badge">Ciências da Saúde</span>
+            <h1>Nutrição</h1>
+            <p class="slogan">"Transformando alimentos em saúde, energia e qualidade de vida."</p>
+            <p class="descricao">
+                O nutricionista é o profissional de saúde capacitado para investigar e controlar a relação do homem com o alimento. Sua rotina envolve desde a avaliação nutricional e prescrição de dietas individualizadas até a gestão de cozinhas industriais, controle de qualidade na indústria alimentícia e educação alimentar em escolas e hospitais. É uma carreira essencial para a prevenção de doenças crônicas e promoção do bem-estar coletivo.
+            </p>
+            <a href="#mercado" class="btn-primary">Explorar Dados da Carreira</a>
+        </div>
+    </section>
+
+    <!-- Seção 2: Fatos Históricos -->
+    <section id="historia" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Fatos Históricos e Evolução</h2>
+            <p class="section-subtitle">A trajetória da ciência dos alimentos ao longo do tempo.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Antiguidade (400 a.C.)</h3>
+                        <p><strong>A Origem Filosófica:</strong> Hipócrates, o pai da medicina, já relacionava a dieta à saúde com a célebre frase: <em>"Que seu remédio seja seu alimento, e que seu alimento seja seu remédio"</em>.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Século XVIII - Revolução Química</h3>
+                        <p><strong>O Nascimento da Ciência:</strong> Antoine Lavoisier descobriu como o corpo metaboliza os alimentos para gerar energia e calor, inaugurando o estudo científico da nutrição e das calorias.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>1939 - O Marco no Brasil</h3>
+                        <p><strong>Institucionalização:</strong> Criação do primeiro curso de Nutrição no Brasil, na Universidade de São Paulo (USP), impulsionado pela necessidade de combater a desnutrição e organizar a alimentação dos trabalhadores urbanos durante a industrialização.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Século XXI - Era Tecnológica</h3>
+                        <p><strong>Nutrigenômica e IA:</strong> Hoje, a profissão utiliza mapeamento genético para dietas personalizadas, softwares de bioimpedância e aplicativos de monitoramento em tempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3: Panorama Atual e Mercado -->
+    <section id="mercado" class="section">
+        <div class="container">
+            <h2 class="section-title">Panorama Atual e Mercado de Trabalho</h2>
+            <p class="section-subtitle">Dados estatísticos, empregabilidade e áreas de atuação.</p>
+
+            <!-- Cards Estatísticos -->
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Média Salarial</h3>
+                    <p class="highlight-number">R$ 3.650,00</p>
+                    <p class="card-detail">Piso inicial médio no Brasil, podendo ultrapassar R$ 8.000,00 em cargos de gestão hospitalar ou consultório próprio consolidado.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3>Crescimento do Setor</h3>
+                    <p class="highlight-number">+18%</p>
+                    <p class="card-detail">Aumento na busca por atendimento nutricional preventivo e esportivo nos últimos anos (Dados de mercado/Conselhos Regionais).</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🌎</div>
+                    <h3>Distribuição Geográfica</h3>
+                    <p class="highlight-number">Sudeste e Sul</p>
+                    <p class="card-detail">Concentram cerca de 60% dos profissionais ativos, mas há forte expansão de vagas no interior e no Nordeste devido a políticas públicas de saúde.</p>
+                </div>
+            </div>
+
+            <!-- Gráfico Interativo de Empregabilidade por Área (HTML/CSS/JS) -->
+            <div class="chart-container">
+                <h3>Distribuição de Empregabilidade por Área de Atuação</h3>
+                <p class="chart-desc">Clique nas barras para ver detalhes sobre cada setor:</p>
+                
+                <div class="bar-group" onclick="mostrarDetalheArea('clinica')">
+                    <div class="bar-label">
+                        <span>Nutrição Clínica (Hospitais e Consultórios)</span>
+                        <span>42%</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 42%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group" onclick="mostrarDetalheArea('uan')">
+                    <div class="bar-label">
+                        <span>Alimentação Coletiva (Restaurantes, Escolas e Empresas)</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 30%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group" onclick="mostrarDetalheArea('esportiva')">
+                    <div class="bar-label">
+                        <span>Nutrição Esportiva e Estética</span>
+                        <span>16%</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 16%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group" onclick="mostrarDetalheArea('industria')">
+                    <div class="bar-label">
+                        <span>Indústria de Alimentos e Marketing</span>
+                        <span>12%</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 12%;"></div>
+                    </div>
+                </div>
+
+                <!-- Caixa de exibição dinâmica ao clicar no gráfico -->
+                <div id="area-info-box" class="info-box">
+                    💡 <strong>Dica:</strong> Clique em qualquer barra acima para descobrir o que o nutricionista faz naquela área!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Projeto Interdisciplinar — Feira de Profissões | Tema: <strong>Nutrição</strong></p>
+            <p class="small">Desenvolvido como portfólio digital de pesquisa.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
